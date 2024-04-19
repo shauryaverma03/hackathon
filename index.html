@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Space Between Navigation Bar and Image</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    /* background-color: beige; */
+  }
+
+  nav {
+    background-color: #333; /* Example color for navigation bar */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #111; /* Example color for hover effect */
+  }
+
+  .content {
+    margin-top: 0; /* Adjust margin-top to control space */
+  }
+
+  .content video {
+    display: block;
+    margin: auto;
+    width: 100%;/* Center image horizontally */
+  }
+  nav{
+    margin: 3% auto;
+    height: 0px;
+    width: 100%;
+    background-image: url(logo.png);
+    color: #333333;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px -17px rgba(0,0,0,0);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: transparent; */
+    /* position: fixed; 
+    background-color: rgba(255, 255, 255, 0.5); */
+}
+.left{
+    font-weight: 600;
+    text-align: center;
+}
+.navi{
+    text-align: center;
+    font-size: 18px;
+    color: #1A1A1A;
+    padding: 10px;
+    margin: 15px;
+}
+.navi a:hover{
+    color: rgb(75, 69, 69);
+}
+.nav-link{
+    color: #1A1A1A;
+    text-decoration: none;
+    margin: 8px;
+}
+.para1 {
+    text-align: left;
+}
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh; /* Adjust as needed */
+        }
+        .text {
+            flex: 1;
+            padding: 20px;
+            /* background-color: #f0f0f0; Adjust background color as needed */
+        }
+        .photo {
+            /* flex: 1; */
+            background-image: url('your-photo-url.jpg'); /* Adjust photo URL */
+            /* background-size: cover; */
+            /* background-position: center; */
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .text, .photo {
+                /* flex: none;
+                width: 100%; */
+            }
+            .text {
+                text-align: justify;
+            }
+            
+        }
+        h{
+          font-size: 50px;
+          margin-left: 560px;
+        }
+        p{
+          font-size: 30px;
+          margin-left: 100px;
+        }
+        h1{
+          font-size: 50px;
+          margin-left: 100px;
+          text-align: center;
+        }
+        .concertimg{
+          text-align: center;
+        }
+        .wed {
+          width: 200px;
+          height: 200px;
+          text-align: center;
+        }
+        footer{
+	/* position: fixed; */
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 215px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0px 0 5px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;    
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+}
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a .logo{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 5px;
+	margin-bottom: 8px;
+}
+        /* .concert {
+          background-image: url(istockphoto-1190896641-612x612.jpg);
+          background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+        } */
+</style>
+</head>
+<body>
+
+<!-- <nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav> --><nav>
+        <div class="left">
+            <a href="index.html"><img src="logo.png" width="90px" height="90px"></a>
+        </div>
+    <div class="navi">
+        <span><a href="index.html" class="nav-link">Home</a></span>
+        <span><a href="birthday.html" class="nav-link">Categories</a></span>
+        <span><a href="contact.html" class="nav-link">Contact Us</a></span>
+    </div>
+     <div class="right">
+            <label for="toggle" id="check"><iconigy-icon icon="gg:menu-round" style="color: rgb(35,35,142);"></iconigy-icon></label>
+            <input type="checkbox" name="toggle" id="toggle">
+            <ul class="list">
+                <a href="login.html"><img src="profile.png" width="45px" height="45px"></a>
+            </ul>
+        </div> 
+</nav>
+
+<div class="content">
+    <video controls>
+        <source src="luxes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>      
+</div>
+<br><br><hr><br><br>
+<h1>Our Past Works</h1>
+<p><i>"At LUXE_EVENTIA, our commitment is to deliver unparalleled excellence in event management. With a keen focus on meticulous planning and attention to detail, we specialize in creating unforgettable experiences for our clients. From exquisite food and beverage arrangements to stunning decorations, LUXE_EVENTIA ensures that every aspect of your event is executed flawlessly. What sets us apart is our dedication to providing exceptional results within your budget constraints. With LUXE_EVENTIA, you can trust that your event will be nothing short of extraordinary."</i></p><br><br><hr>
+<div class="concert"><h1 class="con1"><i>Concerts</i></h1>
+</div>
+<div class="concertimg"><img src="concert.jpeg"></div>
+<br><br><hr><br><br>
+<!-- <br><br><br><hr><br><br> -->
+<!-- <div class="concert"><h1 class="con1"><i>WEDDING</i></h1>
+</div>
+<div class="wed"><img src="WEEDING.jpeg" height="500px" width="500px" text-align="center"></div>
+<br><br><br><hr><br><br> -->
+<div class="concert"><h1 class="con1"><i>Wedding</i></h1>
+</div>
+<div class="concertimg"><img src="WEEDING.jpeg" width="900px" height="900px"></div><br><br><br>
+<footer class="footer-distributed">
+  <div class="footer-left">
+      <h3>Luxe<span>Eventia</span></h3>
+      <p class="footer-links">
+          <a href="Home page2.html">Home</a>
+          <!-- <a href="#">Delivery</a>
+          ·
+          <a href="#">Returns</a> -->
+          ·
+          <a href="#">Discount</a>
+          ·
+          <a href="#">Special Offer</a>
+          ·
+          <a href="contact.html">Contact Us</a>
+      </p><BR></BR>
+      <h3>POLICIES</h3>
+      <p class="footer-links">
+              <ul class="footer-links">
+                  <li><a href="exchange.html">No Refund after payment</a></li>
+                  <li><a href="Shipping Policy.html">Organizer Holds Right to Modify</a></li>
+                  <li><a href="Exchange and Refund Policy.html">Attend at Own Risk</a></li>
+                  <li><a href="Terms and Conditions.html">Terms and Conditions</a></li>
+                  <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+              </ul></a><br>
+      <p class="footer-company-name">WebAceTechnology &copy; 2023</p>
+  </div>
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Lovely Professional University</span> Phagwara, India</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 01234 56789</p>
+      </div>
+
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">contact@lexusEventia.com</a></p>
+      </div><br>
+      <h3>Newsletter</h3>
+      <p class="Newsletter">You can be the first one to know about our new<br>releases, latest offers and more. <a href="index.html">Sign up now!</a></p><br><br>
+      <input type="email" class="login1" placeholder="Your mail">
+      <label for="email"></label>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About the company</span>
+          Web Ace Technology is a blog for web designers, graphic designers, web developers &amp; SEO Learner.
+      </p>
+      <div class="footer-icons">
+          <a href="https://www.instagram.com/luxe__eventia__?igsh=MWJ1Z2EwdTBpeG9jYg=="><img src="instagram.jpg" class="logo"></a>
+          <a href="https://in.linkedin.com/"><img src="LinkedIn.png" class="logo"></a>
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="twitter.jpg" class="logo"></a>
+          <a href="https://github.com/"><img src="GitHub.png" class="logo"></a>
+      </div>
+  </div>
+</footer>
+<!-- <div class="para1"> -->
+
+    <!-- <div class="container">
+        <div class="text">
+            <h1>Corporate Event Management Company in Mumbai - Trusted by Over 200+ Brand</h1>
+            <p>We are nationally recognized event planning & organising company based in Mumbai. We started with a purpose to provide one stop solutions for all your Event-related worries. Craftworld Events company specialize in corporate events management, BTL activation. we also highly recommended for conference event organizing and exhibition stall designing.This is the best Event Management Agency in Mumbai, you will find, period. We’ve always prided ourselves on being more than just event orgainser firm. We proudly present STAGE WORLD, a complete production house having all the experience & capabilities of producing & managing exhibition & events. The in-house staging unit, fabrication & designing workshop, audio visual equipment & basic sound is our biggest asset to provide the state of the art equipment, technical staff and experienced event support around the world.</p>
+        </div>
+        <div class="photo">
+            <img src="image1.jpg">
+        </div>
+    </div>
+</div> -->
+</body>
+</html>
